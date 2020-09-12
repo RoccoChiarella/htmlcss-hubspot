@@ -5,13 +5,11 @@
 }
 
 body{
-    font-size: 1.125rem;
-    line-height: 1.61111em;
+    font-size: 18px;
+    line-height: 25px;
     font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #33475b;
     font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
     margin: 0;
@@ -21,7 +19,7 @@ body{
 .container{
     max-width: 1080px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 40px;
     box-sizing: content-box;
     content: '';
     display: table;
@@ -29,19 +27,24 @@ body{
 }
 
 .header-top{
+    width: 100%;
+    position: fixed;
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    background-color: #f5f8fa;
 }
 
-.header-language{
+.header-top-left{
+    height: 100%;
+    width: 50%;
     float: left;
 }
 
-.header-contact{
+.header-top-left div{
     float: left;
 }
 
@@ -53,41 +56,82 @@ body{
     font-family: "hsg-icons";
     font-size: 8px;
     line-height: 1;
-    margin: 0 .25rem 0 .625rem;
+    margin: 0 4px 0 10px;
 }
 
-#globe{
+.header-top .container .header-top-left .header-language span i{
     vertical-align: top;
-    margin-right: .625rem;
+    margin-right: 10px;
     display: inline-flex;
-    width: 1rem;
-    max-height: 1.8rem;
-    content:'f0ac';
+    width: 16px;
+    max-height: 29px;
+    content:'\f0ac';
+}
+
+.header-top-right{
+    height: 100%;
+    width: 50%;
+    float: left;
 }
 
 .header-bottom{
-<<<<<<< Updated upstream
-    height: 100px;
-=======
-    margin: 0;
-    padding: 0;
-    border: 0;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 100px;
+    border-top: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
 
-.header.logo{
-
+.header-bottom-left{
+    height: 100%;
+    width: 50%;
+    float: left;
 }
 
-.header-Software{
+.header-logo{
+    float: left;
+}
+
+.header-bottom-right{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.header-bottom-right div{
     padding: 10px;
-    float: right;
->>>>>>> Stashed changes
+    float: left;
 }
 
-section#jumbo{
-    background-color: coral;
+#menu-dropdown div a{
+    text-decoration: none;
+    color: #33475b;
+}
+
+#menu-dropdown div i{
+    color: #7c98b6;
+    content: "\f107";
+    padding: 3px;
+}
+
+#jumbo-home{
+    width: 100%;
+    height: 500px;
+}
+
+#jumbo-offerts{
+    width: 100%;
+    height: 500px;
+}
+
+#jumbo-analytics{
+    width: 100%;
+    height: 500px;
+}
+
+#jumbo-information{
+    width: 100%;
     height: 500px;
 }
