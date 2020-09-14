@@ -78,18 +78,8 @@ body{
 
 .header-language span .fa-sort-down{
     margin: 0 4px 0 10px;
-}
-
-/* .header-language::after{
-    content: "\E004";
-    display: inline-block;
-    position: relative;
     color: #7c98b6;
-    font-family: "hsg-icons";
-    font-size: 8px;
-    line-height: 1;
-    margin: 0 4px 0 10px;
-} */
+}
 
 .header-top .container .header-language span i{
     margin-right: 10px;
@@ -210,39 +200,138 @@ body{
     padding: 3px;
 }
 
-#jumbo-home {
+#join-us{
+    color: white;
+    background-color: #425b76;
+}
+
+#join-us p{
+    padding: 20px;
+}
+
+#jumbo-home{
+    padding-top: 64px;
+    padding-bottom: 112px;
     background-image: linear-gradient(to top right,#fef8f0,#fff3ee,#fff1ee);
 }
 
-#jumbo-home .scritta-jumbo {
-    width:30%;
+#jumbo-home .scritta-jumbo{
+    width:40%;
     padding:20px 0;
 }
 
-#jumbo-home .scritta-jumbo h1 {
+#jumbo-home .scritta-jumbo h1{
     padding-bottom:20px;
 }
 
+#jumbo-home .scritta-jumbo a{
+    text-align: center;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+    display: inline-block;
+    border: 0;
+    font-weight: 600;
+    background-color: #ff7a59;
+    color: #fff;
+    padding: 22.576px 32px 19.376px;
+    font-size: 17px;
+    min-width: 116.432px;
+    text-decoration: none;
+}
+
+#jumbo-home .scritta-jumbo p{
+    font-size: 18px;
+    line-height: 25.77776px;
+    padding: 10px 0;
+}
+
+#jumbo-home .scritta-jumbo .home-mini{
+    font-size: 14px;
+    max-width: 224px;
+    line-height: 26.28576px;
+}
 
 #jumbo-offerts{
-    width: 100%;
-    height: 500px;
+    background-color: #f5f8fa;
+    padding: 100px 0 50px;
+}
+
+.first-box{
+    width: 32%;
+    margin: 0 2% 32px 0;
+    float: left;
+}
+
+.box{
+    width: calc(32% - 4%);
+    padding: 32px;
+    margin-right: 2%;
+    margin-bottom: 16px;
+    text-align: left;
+    float: left;
+    border-radius: .1875rem;
+    background: #fff;
+}
+
+.jumbo-features p{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 2em;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    border-top: 1px solid rgba(153,172,194,0.2);
+    padding-top: 2em;
+}
+
+.jumbo-features-list ul li{
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.jumbo-features-list ul li::before{
+    content: "";
+    background: url(//cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg) no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-right: 10px;
+}
+
+.jumbo-features-button{
+    display: block;
+    text-align: center;
+    transition: transform .3s;
+    padding-top: 20px;
+    vertical-align: middle;
+}
+
+.jumbo-features-button a{
+    text-align: center;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+    display: inline-block;
+    border: 0;
+    font-weight: 600;
+    background-color: #ff7a59;
+    color: #fff;
+    padding: 14.4px 22.208px 9.6px;
+    font-size: 15px;
+    min-width: 136.88px;
+    text-decoration: none;
 }
 
 #jumbo-analytics{
     width: 100%;
-    height: 500px;
+    background-image: linear-gradient(45deg,#00a4bd,#00bda5);
 }
 
 #jumbo-information{
     width: 100%;
     height: 500px;
-}
-
-.prova-top-header-verde {
-    background-color: green;
-}
-
-.prova-top-header-rosso {
-    background-color: red;
 }
