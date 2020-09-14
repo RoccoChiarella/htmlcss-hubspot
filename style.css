@@ -16,14 +16,16 @@ body{
     padding: 0;
 }
 
-.container{
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 40px;
-    box-sizing: content-box;
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .header-top{
@@ -36,19 +38,49 @@ body{
     font: inherit;
     vertical-align: baseline;
     background-color: #f5f8fa;
+    border-bottom: 1px solid #cbd6e2;
 }
 
 .header-top-left{
-    height: 100%;
-    width: 50%;
-    float: left;
+    /*border:1px solid red;*/
 }
 
-.header-top-left div{
-    float: left;
+.header-top .container ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
 }
 
-.header-language::after{
+.header-top .container ul li{
+    /*float: left;*/
+    display: inline-block;
+}
+
+.header-top-left,
+.header-top-right {
+    float:left;
+    width:50%;
+    line-height: 80px;
+}
+
+.header-top-right {
+    text-align: right;
+}
+
+.header-language span{
+    padding-right: 16px;
+    border-right: 2px solid #cbd6e2;
+}
+
+.header-language span .fa-sort-down{
+    margin: 0 4px 0 10px;
+}
+
+/* .header-language::after{
     content: "\E004";
     display: inline-block;
     position: relative;
@@ -57,69 +89,140 @@ body{
     font-size: 8px;
     line-height: 1;
     margin: 0 4px 0 10px;
-}
+} */
 
-.header-top .container .header-top-left .header-language span i{
-    vertical-align: top;
+.header-top .container .header-language span i{
     margin-right: 10px;
-    display: inline-flex;
     width: 16px;
     max-height: 29px;
     content:'\f0ac';
 }
 
-.header-top-right{
-    height: 100%;
-    width: 50%;
-    float: left;
+.header-top .container .header-contact p{
+    padding: 0 16px;
+}
+
+#button-login{
+    text-align: center;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+    border: 0;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #ff7a59;
+    color: #ff7a59;
+    padding: 5.68px 17.776px 5.68px;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 94.208px;
+    text-decoration: none;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+#button-GetHubspot{
+    text-align: center;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+    border: 0;
+    font-weight: 600;
+    background-color: #ff7a59;
+    color: #fff;
+    padding: 5.68px 17.776px 5.68px;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 94.208px;
+    text-decoration: none;
+    font-family: inherit;
+    vertical-align: baseline;
 }
 
 .header-bottom{
     width: 100%;
     margin-top: 0;
-    padding-top: 100px;
+    padding-top: 80px;
     border-top: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
 
-.header-bottom-left{
-    height: 100%;
-    width: 50%;
+.header-bottom-left,
+.header-bottom-right {
+    line-height: 80px;
+}
+
+.header-bottom-left {
+    width: 30%;
     float: left;
+}
+
+.header-bottom-right {
+    width: 70%;
+    float: left;
+    text-align: right;
 }
 
 .header-logo{
     float: left;
 }
 
-.header-bottom-right{
-    height: 100%;
-    width: 50%;
-    float: left;
+.header-bottom .container .header-bottom-right #menu-dropdown li {
+    display: inline-block;
+    padding-right: 10px;
 }
 
-.header-bottom-right div{
-    padding: 10px;
-    float: left;
+/*
+.header-bottom .container .header-bottom-right #menu-dropdown{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
 }
 
-#menu-dropdown div a{
+.header-bottom .container .header-bottom-right #menu-dropdown li{
+    list-style: none;
+    margin: 0;
+    padding: 0 16px;
+    border-bottom: 0;
+    float: left;
+    display: inline-block;
+    color: inherit;
+    font-family: inherit;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*/
+
+.header-bottom .container .header-bottom-right #menu-dropdown li a{
     text-decoration: none;
     color: #33475b;
 }
 
-#menu-dropdown div i{
+.header-bottom .container .header-bottom-right #menu-dropdown li i{
     color: #7c98b6;
     content: "\f107";
     padding: 3px;
 }
 
-#jumbo-home{
-    width: 100%;
-    height: 500px;
+#jumbo-home {
+    background-image: linear-gradient(to top right,#fef8f0,#fff3ee,#fff1ee);
 }
+
+#jumbo-home .scritta-jumbo {
+    width:30%;
+    padding:20px 0;
+}
+
+#jumbo-home .scritta-jumbo h1 {
+    padding-bottom:20px;
+}
+
 
 #jumbo-offerts{
     width: 100%;
@@ -134,4 +237,12 @@ body{
 #jumbo-information{
     width: 100%;
     height: 500px;
+}
+
+.prova-top-header-verde {
+    background-color: green;
+}
+
+.prova-top-header-rosso {
+    background-color: red;
 }
